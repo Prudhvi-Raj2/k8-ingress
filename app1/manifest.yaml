@@ -45,11 +45,11 @@ metadata:
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:340495553266:certificate/622ef78b-2412-44ef-a0a4-a3c938c92d2d
     alb.ingress.kubernetes.io/group.name: "expense-group"
     #ingress class annotation
-  spec:
-    ingressClassName: alb
-    rules:
-    - host: "app1.kambalas.shop"
-      http:
+spec:
+  ingressClassName: alb
+  rules:
+  - host: "app1.kambalas.shop"
+    http:
         paths:
          - pathType: Prefix
            path: "/"
